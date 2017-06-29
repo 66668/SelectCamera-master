@@ -3,6 +3,7 @@ package com.linzhi.selectcamera_master;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -18,6 +19,9 @@ public class MainActivity extends BaseActivity implements UpdateAvatarUtil.Choos
     //拍照
     @ViewInject(id = R.id.imgPhoto, click = "imgPhotoClick")
     ImageView imgPhoto;
+
+    @ViewInject(id = R.id.btn, click = "transfer")
+    Button btn;
 
     private UpdateAvatarUtil updateAvatarUtil;//头像上传工具
     //外部jar包：universal-image-loader-1.9.2.jar/异步加载图片
@@ -81,5 +85,9 @@ public class MainActivity extends BaseActivity implements UpdateAvatarUtil.Choos
     //实现UpdateAvatarUtil.ChoosePicCallBack的接口方法（3）
     public void cancel() {
 
+    }
+
+    public void transfer(View view) {
+        startActivity(SecondActivity.class);
     }
 }

@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="bar_line">#bbbbbb</color> <!-- 导航条的灰色分割线 -->
+    <color name="blue">#004299</color>
+    <color name="blue_start">#00338B</color>
+    <color name="blue_center">#003F97</color>
+    <color name="blue_end">#0B4CA4</color>
 </resources>
